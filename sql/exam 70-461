@@ -1,1 +1,8 @@
 window function
+
+framing: 
+rows between unbounded preceding and current row (default is range, rows is more optimized though)
+rows between current row and unbounded following
+rows between n preceding and current row (where n is for n rows preceding current row)
+
+Unlike grouped queries, which hide the detail rows and return only one row per group, windowed queries do not hide the detail. They return a row per each row in the underlying query, and allow mixing detail elements and window functions in the same expressions.
