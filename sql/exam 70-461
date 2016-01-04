@@ -1,3 +1,10 @@
+
+SQL is based on set theory and predicate logic
+A predicate is an expression that when attributed to some object, makes a proposition either true or false.
+Set should be considered as a whole, thus iterative solutions should be avoided.
+An Ordered result is not relational. SQL calls it a cursor.
+
+
 window function
 
 framing: 
@@ -6,3 +13,5 @@ rows between current row and unbounded following
 rows between n preceding and current row (where n is for n rows preceding current row)
 
 Unlike grouped queries, which hide the detail rows and return only one row per group, windowed queries do not hide the detail. They return a row per each row in the underlying query, and allow mixing detail elements and window functions in the same expressions.
+
+
